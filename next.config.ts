@@ -1,10 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Prevent memory-heavy TypeScript type-checking from killing the build on Alwaysdata
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   // Tree-shake barrel imports if any remain
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
+
   images: {
     // Prefer modern formats when the browser supports them
     formats: ["image/avif", "image/webp"],

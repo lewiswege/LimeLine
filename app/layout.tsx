@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     template: `%s · ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  verification: {
+    google: "spKfztMY6JcB6sYjKyElyp6sKV0o7F-lwIm-NpSkVks",
+  },
 };
 
 export const viewport: Viewport = {
